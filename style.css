@@ -784,3 +784,86 @@ ol {
     display: none;
   }
 }
+/* ========================================
+   お問い合わせフォーム
+======================================== */
+
+.contact-form {
+  display: grid;
+  gap: 24px;
+  margin-top: 36px;
+  text-align: left;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form__field label {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact-form__field label span {
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #e7f1ef;
+  color: #1e3a5f;
+  font-size: 12px;
+}
+
+.contact-form__field input,
+.contact-form__field select,
+.contact-form__field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d7e2e4;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #243447;
+  font: inherit;
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+}
+
+.contact-form__field input:focus,
+.contact-form__field select:focus,
+.contact-form__field textarea:focus {
+  outline: 3px solid #b7cdc9;
+  outline-offset: 2px;
+}
+
+.contact-form__notice {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contact-form button[type="submit"] {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#contact-status {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+}
+/* 迷惑送信対策用の非表示入力欄 */
+.contact-form__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
